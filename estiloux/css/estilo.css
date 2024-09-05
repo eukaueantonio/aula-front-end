@@ -7,18 +7,19 @@
 html,
 body {
     height: 100%;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
 }
 
 body {
     background-color: #efefef;
-    border: 2px solid blue;
+    /* border: 2px solid blue;*/
 }
 
-header, footer {
+header,
+footer {
     width: 100%;
     height: 10%;
-    background-color: #727272;
+    background-color: blue;
 
 }
 
@@ -86,7 +87,10 @@ nav a:hover {
 main {
     width: 100%;
     height: 80%;
-    border: 3px solid red;
+    /*border: 3px solid black;*/
+    padding-bottom: 20px;
+    padding-top: 20px;
+
 }
 
 .main-flex {
@@ -94,21 +98,98 @@ main {
     height: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background-color: #fc9696;
-    border: 2px solid green;
+    /*border: 2px solid black;*/
 }
 
 .harmonia {
-    border: 2px solid blue;
+    /*border: 2px solid black;*/
     width: 670px;
     height: 100%;
-    background-color: green;
+    background-color: white;
+    padding-bottom: 20px;
+    overflow: auto;
 }
 
 aside {
-    border: 2px solid purple;
-    background-color: green;
+    /*border: 2px solid black;*/
+    background-color: #efefef;
     width: 250px;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+
+}
+
+.harmonia img {
+    width: 100%;
+}
+
+.harmonia h2 {
+    margin-top: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+    color: #a8a8a8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.harmonia p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #a8a8a8;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: 400;
+
+}
+
+aside article {
+    background-color: white;
+    width: 100%;
+
+}
+
+aside .buscar-cartas-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+aside article h3 {
+    width: 100%;
+    color: #a8a8a8;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 2px solid #a8a8a8;
+}
+
+aside article input,
+aside article button {
+    height: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+aside article input {
+    border: 1px solid #a8a8a8;
+    outline: none;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+aside article button {
+    width: 30px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border: 1px solid blue;
+    cursor: pointer;
 }
